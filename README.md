@@ -1,24 +1,15 @@
-# automatic-number-plate-recognition-python-yolov8
+# Robust Real-Time Vehicle License Plate Detection System
 
-<p align="center">
-<a href="https://www.youtube.com/watch?v=fyJB1t0o0ms">
-    <img width="600" src="https://utils-computervisiondeveloper.s3.amazonaws.com/thumbnails/with_play_button/anpr_yolo2.jpg" alt="Watch the video">
-    </br>Watch on YouTube: Automatic number plate recognition with Python, Yolov8 and EasyOCR !
-</a>
-</p>
+## Overview
+This project implements a real-time vehicle license plate detection system using YOLOv8 for vehicle and license plate recognition. The system is enhanced with the SORT algorithm for tracking and an interpolation algorithm to recover missing license plate data when plates are temporarily obscured.
 
-## data
+## Features
+- **YOLOv8 for Detection**: Uses YOLOv8 for accurate detection of vehicles and license plates.
+- **SORT for Tracking**: Implements the Simple Online and Realtime Tracking (SORT) algorithm to track vehicles across frames.
+- **Interpolation for Data Recovery**: Recovers license plate numbers obscured by other vehicles using an interpolation algorithm.
 
-The video I used in this tutorial can be downloaded [here](https://drive.google.com/file/d/12sBfgLICdQEnDSOkVFZiJuUE6d3BeanT/view?usp=sharing).
-
-## models
-
-A Yolov8 pretrained model was used to detect vehicles.
-
-A licensed plate detector was used to detect license plates. The model was trained with Yolov8 using [this dataset](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/4) and following this [step by step tutorial on how to train an object detector with Yolov8 on your custom data](https://github.com/computervisioneng/train-yolov8-custom-dataset-step-by-step-guide). 
-
-The trained model is available in my [Patreon](https://www.patreon.com/ComputerVisionEngineer).
-
-## dependencies
-
-The sort module needs to be downloaded from [this repository](https://github.com/abewley/sort) as mentioned in the [video](https://youtu.be/fyJB1t0o0ms?t=1120).
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/robust-vehicle-license-plate-detection.git
+   cd robust-vehicle-license-plate-detection
